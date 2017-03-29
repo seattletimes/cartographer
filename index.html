@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Silent Cartographer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="map-container">
+      <leaflet-map>
+        <tile-layer layer="esriStreets"></tile-layer>
+      </leaflet-map>
+    </div>
+    <div class="search-panel">
+      <h1>Cartographer</h1>
+      <div class="row">
+        <input class="search">
+        <button class="go">GO</button>
+      </div>
+      <div class="instructions">
+        Use the search box above to find an address, then screenshot the map.
+      </div>
+    </div>
+    <script src="https://apps.seattletimes.com/tags/leaflet-map/leaflet-map.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
