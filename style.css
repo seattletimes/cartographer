@@ -85,3 +85,7 @@ input:focus, textarea:focus {
 .leaflet-popup-close-button {
   display: none;
 }
+
+.leaflet-popup:hover .leaflet-popup-close-button {
+  display: block;
+}

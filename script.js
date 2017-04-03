@@ -9,6 +9,7 @@ var map = mapElement.map;
 var lookup = mapElement.lookup;
 
 map.setMaxZoom(19);
+map.options.closePopupOnClick = false;
 
 var tiles = {};
 
@@ -40,8 +41,10 @@ changeLayer();
 var bubble = new leaflet.Popup();
 
 map.on("click", function(e) {
+  bubble = new leaflet.Popup();
+  bubble.setLatLng(e.latlng);
   bubble.setContent(popupInput.value.trim() || " ");
-  map.openPopup(bubble, e.latlng);
+  map.addLayer(bubble, e.latlng);
 });
 
 popupInput.addEventListener("keyup", function() {
