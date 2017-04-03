@@ -8,7 +8,7 @@ var leaflet = mapElement.leaflet;
 var map = mapElement.map;
 var lookup = mapElement.lookup;
 
-map.setMaxZoom(17);
+map.setMaxZoom(19);
 
 var tiles = {};
 
