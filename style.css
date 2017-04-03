@@ -78,6 +78,10 @@ input:focus, textarea:focus {
   padding: 4px 8px;
 }
 
+.control-panel textarea {
+  min-height: 20vh;
+}
+
 .leaflet-popup-content-wrapper {
   border-radius: 0;
 }
