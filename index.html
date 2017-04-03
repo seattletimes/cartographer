@@ -4,22 +4,40 @@
     <meta charset="utf-8">
     <title>Silent Cartographer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <div class="map-container">
       <leaflet-map>
-        <tile-layer layer="esriStreets"></tile-layer>
+        <tile-layer layer="esriStreets" id="Streets"></tile-layer>
+        <tile-layer layer="cartoPositron" id="Positron"></tile-layer>
+        <tile-layer layer="esriNationalGeographic" id="NatGeo"></tile-layer>
+        <tile-layer layer="esriImagery" id="Satellite"></tile-layer>
+        <tile-layer layer="esriTopographic" id="Topographic"></tile-layer>
       </leaflet-map>
     </div>
-    <div class="search-panel">
+    <div class="control-panel">
       <h1>Cartographer</h1>
-      <div class="row">
-        <input class="search">
-        <button class="go">GO</button>
-      </div>
-      <div class="instructions">
-        Use the search box above to find an address, then screenshot the map.
-      </div>
+      <section>
+        <h2>Tile layer</h2>
+        <select class="layer-select"></select>
+      </section>
+
+      <section>
+        <h2>Popup (click to place)</h2>
+        <textarea class="popup-input">Popup label text goes here.</textarea>
+      </section>
+
+      <section>
+        <h2>Address search</h2>
+        <div class="row">
+          <div class="input-container">
+            <input class="search">
+          </div>
+          <button class="go">GO</button>
+        </div>
+      </section>
+
     </div>
     <script src="https://apps.seattletimes.com/tags/leaflet-map/leaflet-map.js"></script>
     <script src="script.js"></script>

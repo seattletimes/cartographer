@@ -11,6 +11,19 @@ body {
   display: flex;
   height: 100vh;
   align-items: stretch;
+  font-family: Roboto, sans-serif;
+}
+
+input, textarea, select, button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  border: 1px solid #DDD;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #888;
 }
 
 .map-container {
@@ -26,7 +39,7 @@ body {
   height: 100%;
 }
 
-.search-panel {
+.control-panel {
   flex: 0 0 300px;
   display: flex;
   flex-direction: column;
@@ -34,16 +47,41 @@ body {
   padding: 20px;
 }
 
-.search-panel .row {
-  overflow: hidden;
+.control-panel section {
+  margin: 20px 0;
 }
 
-.search-panel input {
-  width: 70%;
-  float: left;
+.control-panel h1 {
+  margin: 0;
 }
 
-.search-panel button {
-  float: left;
-  width: 30%;
+.control-panel h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.control-panel .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: none;
+}
+
+.control-panel .row .input-container {
+  flex: 0 0 70%;
+}
+
+.control-panel button {
+  flex: 0 0 25%;
+  background: white;
+  border-radius: 2px;
+  padding: 4px 8px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+}
+
+.leaflet-popup-close-button {
+  display: none;
 }
