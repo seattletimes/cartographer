@@ -84,6 +84,7 @@ input:focus, textarea:focus {
 
 .leaflet-popup-content-wrapper {
   border-radius: 0;
+  font-size: 20px;
 }
 
 .leaflet-popup-close-button {
