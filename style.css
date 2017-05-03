@@ -11,11 +11,11 @@ body {
   display: flex;
   height: 100vh;
   align-items: stretch;
-  font-family: Roboto, sans-serif;
+  font-family: "ff-dagny-web-pro", sans-serif;
 }
 
 input, textarea, select, button {
-  font-family: Roboto, sans-serif;
+  font-family: "ff-dagny-web-pro", sans-serif;
   font-size: 16px;
   border: 1px solid #DDD;
   width: 100%;
@@ -85,6 +85,7 @@ input:focus, textarea:focus {
 .leaflet-popup-content-wrapper {
   border-radius: 0;
   font-size: 20px;
+  font-family: "ff-dagny-web-pro", sans-serif;
 }
 
 .leaflet-popup-close-button {
